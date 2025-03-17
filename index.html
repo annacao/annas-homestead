@@ -27,8 +27,8 @@
         h2 {
             color: #1e3a2a;
             font-size: 1.5em;
-            display: inline-block;  /* Ensures the heart stays part of the title text */
-            text-align: center;     /* Centers the entire text */
+            display: inline-block;  /* Keeps the heart and text inline */
+            text-align: center;
         }
         p {
             color: #333;
@@ -82,8 +82,10 @@
         /* Media Query for Mobile Devices */
         @media (max-width: 768px) {
             h2 {
-                font-size: 1.2em;  /* Adjust font size for smaller screens */
-                text-align: center;  /* Ensure it's still centered */
+                font-size: 1.2em;  /* Smaller font size for mobile */
+                white-space: nowrap;  /* Prevents text from wrapping onto the next line */
+                overflow: hidden;  /* Hides any overflow that goes beyond the container */
+                text-overflow: ellipsis;  /* Adds ellipsis if text overflows */
             }
         }
     </style>
@@ -122,4 +124,3 @@
     </footer>
 </body>
 </html>
-
