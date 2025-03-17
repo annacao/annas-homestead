@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anna's Homestead</title>
     <style>
-        /* Your styles remain unchanged */
         body {
             background-color: #dde5d5;
             font-family: 'Arial', sans-serif;
@@ -44,13 +43,19 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;  /* Centering the form elements */
         }
         .order-form input, .order-form textarea {
-            width: 100%;
+            width: 80%;  /* Center and define the width */
             padding: 10px;
             margin-bottom: 10px;
             border-radius: 5px;
             border: 1px solid #ccc;
+            display: block;  /* Ensures inputs are block elements */
+            margin-left: auto;
+            margin-right: auto;  /* Centers the inputs */
         }
         .order-form button {
             padding: 10px 20px;
@@ -59,6 +64,9 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            width: 80%;  /* Center the button with the same width as inputs */
+            margin-left: auto;
+            margin-right: auto;
         }
         .order-form button:hover {
             background-color: #1e3a2a;
@@ -71,7 +79,6 @@
         <h2>Organic Quail Eggs ♡ Laid by Happy Hens</h2>
         <p>Fresh • Gathered with Care • Naturally Raised • Cotournix Quail</p>
         
-
         <!-- Order Form Section -->
         <div class="order-form">
             <h2>Place Your Order</h2>
@@ -97,4 +104,5 @@
     </footer>
 </body>
 </html>
+
 
