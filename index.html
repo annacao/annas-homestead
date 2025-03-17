@@ -85,10 +85,11 @@
         /* Media Query for Mobile Devices */
         @media (max-width: 768px) {
             h2 {
-                font-size: 1.2em;  /* Smaller font size for mobile */
-                white-space: nowrap;  /* Prevents text from wrapping onto the next line */
-                overflow: hidden;  /* Hides any overflow that goes beyond the container */
-                text-overflow: ellipsis;  /* Adds ellipsis if text overflows */
+                font-size: 1.2em;  /* Slightly smaller for mobile */
+                white-space: normal;  /* Allow text to wrap */
+                word-wrap: break-word;  /* Ensures text doesn’t overflow */
+                overflow: visible;  /* Prevents text from getting cut off */
+                max-width: 100%;  /* Uses full width to avoid unnecessary truncation */
             }
         }
     </style>
