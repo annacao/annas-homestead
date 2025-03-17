@@ -27,6 +27,8 @@
         h2 {
             color: #1e3a2a;
             font-size: 1.5em;
+            display: inline-block;  /* Ensures the heart stays part of the title text */
+            text-align: center;     /* Centers the entire text */
         }
         p {
             color: #333;
@@ -36,7 +38,6 @@
             margin-top: 20px;
             font-size: 1.1em;
         }
-        /* Style for the order form */
         .order-form {
             margin-top: 40px;
             background: #f6f7f1;
@@ -45,17 +46,17 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
             display: flex;
             flex-direction: column;
-            align-items: center;  /* Centering the form elements */
+            align-items: center;
         }
         .order-form input, .order-form textarea {
-            width: 80%;  /* Center and define the width */
+            width: 80%;
             padding: 10px;
             margin-bottom: 10px;
             border-radius: 5px;
             border: 1px solid #ccc;
-            display: block;  /* Ensures inputs are block elements */
+            display: block;
             margin-left: auto;
-            margin-right: auto;  /* Centers the inputs */
+            margin-right: auto;
         }
         .order-form button {
             padding: 10px 20px;
@@ -64,19 +65,26 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            width: 80%;  /* Center the button with the same width as inputs */
+            width: 80%;
             margin-left: auto;
             margin-right: auto;
         }
         .order-form button:hover {
             background-color: #1e3a2a;
         }
-        /* Styling the image */
         .order-form-img {
-            max-width: 60%;  /* Scaling of the image from 100 --> 60 percent */
+            max-width: 60%;
             height: auto;
             border-radius: 10px;
-            margin-bottom: 20px;  /* Adds space between the image and form */
+            margin-bottom: 20px;
+        }
+
+        /* Media Query for Mobile Devices */
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 1.2em;  /* Adjust font size for smaller screens */
+                text-align: center;  /* Ensure it's still centered */
+            }
         }
     </style>
 </head>
@@ -88,7 +96,6 @@
 
         <!-- Image above the order form -->
         <img src="quailseggs.jpg" alt="Quail Eggs" class="order-form-img">
-
 
         <!-- Order Form Section -->
         <div class="order-form">
@@ -115,3 +122,4 @@
     </footer>
 </body>
 </html>
+
