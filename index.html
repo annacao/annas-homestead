@@ -26,9 +26,12 @@
         }
         h2 {
             color: #1e3a2a;
-            font-size: 1.5em;
-            display: inline-block;  /* Keeps the heart and text inline */
+            font-size: 1.4em; /* Slightly smaller to fit */
             text-align: center;
+            display: block; /* Ensures it's fully centered */
+            margin: 0 auto; /* Centers it inside the container */
+            max-width: 90%; /* Prevents it from stretching too wide */
+            word-wrap: break-word; /* Ensures text doesn’t overflow */
         }
         p {
             color: #333;
