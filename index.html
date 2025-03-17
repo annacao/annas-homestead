@@ -71,117 +71,8 @@
         .order-form button:hover {
             background-color: #1e3a2a;
         }
-
-        
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Anna's Homestead</h1>
-        <h2>Organic Quail Eggs ♡ Laid by Happy Hens</h2>
-        <p>Fresh • Gathered with Care • Naturally Raised • Cotournix Quail</p>
-        
-        <!-- Order Form Section -->
-        <div class="order-form">
-            <h2>Place Your Order</h2>
-            <p>Fill out the form below to place your order for fresh quail eggs!</p>
-            <form action="submit_order.php" method="POST">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="order-details">Order Details (Quantity, Special Instructions)</label>
-                <textarea id="order-details" name="order-details" rows="4" required></textarea>
-
-                <button type="submit">Submit Order</button>
-            </form>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Anna's Homestead</p>
-    </footer>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anna's Homestead</title>
-    <style>
-        body {
-            background-color: #dde5d5;
-            font-family: 'Arial', sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            background: #f6f7f1;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        }
-        h1 {
-            color: #2f5435;
-            font-size: 2.5em;
-        }
-        h2 {
-            color: #1e3a2a;
-            font-size: 1.5em;
-        }
-        p {
-            color: #333;
-            font-size: 1.2em;
-        }
-        .contact {
-            margin-top: 20px;
-            font-size: 1.1em;
-        }
-        /* Style for the order form */
-        .order-form {
-            margin-top: 40px;
-            background: #f6f7f1;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-            display: flex;
-            flex-direction: column;
-            align-items: center;  /* Centering the form elements */
-        }
-        .order-form input, .order-form textarea {
-            width: 80%;  /* Center and define the width */
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            display: block;  /* Ensures inputs are block elements */
-            margin-left: auto;
-            margin-right: auto;  /* Centers the inputs */
-        }
-        .order-form button {
-            padding: 10px 20px;
-            background-color: #2f5435;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            width: 80%;  /* Center the button with the same width as inputs */
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .order-form button:hover {
-            background-color: #1e3a2a;
-        }
         /* Styling the image */
-        .order-form img {
+        .order-form-img {
             max-width: 100%;  /* Ensures image is responsive */
             height: auto;
             border-radius: 10px;
@@ -223,4 +114,3 @@
     </footer>
 </body>
 </html>
-
